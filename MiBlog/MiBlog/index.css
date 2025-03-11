@@ -1,0 +1,152 @@
+/* index.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.intro {
+    margin: 50px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 40px;
+    color: #264653;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    color: #2a9d8f;
+    margin-top: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.proyectos {
+    margin-top: 50px;
+}
+
+.proyectos h3 {
+    font-size: 28px;
+    color: #264653;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #264653;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.yo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+}
+
+.carousel-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.carousel .next {
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: rgb(195, 194, 194);
+    margin-top: 10px;
+
+}
+.carouse button{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    font-size: 18px;
+}
+.prev{
+    left: 0;
+    border-radius: 0 10px 10px 0;
+}
+.next{
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+a[href*="linkedin.com"] button {
+    background-color: #0077b5; 
+}
+
+a[href*="github.com"] button {
+    background-color: #333; 
+}
+
+button:hover {
+    transform: translateY(-3px); 
+}
+
+a[href*="linkedin.com"] button:hover {
+    background-color: #005582; 
+}
+
+a[href*="github.com"] button:hover {
+    background-color: #444; 
+}
+button:active {
+    transform: translateY(0); 
+}
+
+p{
+    text-align: justify;
+}

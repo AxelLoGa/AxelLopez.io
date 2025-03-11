@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel López</title>
+    <link rel="stylesheet" href="./certificados.css">
+    <link rel="icon" href="./images/logoIcono.png" type="image/png">
+</head>
+<body>
+    <div id="header"></div>
+        <div class="certificados">
+            <div class="proyectos"><h3>Mis Certificados</h3></div>
+            <iframe src="./certificados/HP HPGG03.es Certificate _ edX_axelLopez (1).pdf" width="400" height="200"></iframe>
+            <iframe src="./certificados/UC-52c59793-44a0-4145-b977-f38c609c98ff (1).pdf" width="400" height="200"></iframe>
+        </div>
+    <div id="footer"></div>
+    
+    <script src="script.js"></script>
+    <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+</body>
+</html>

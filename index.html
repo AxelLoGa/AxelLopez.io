@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXEL LOPEZ</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./images/logoIcono.png" type="image/png">
+</head>
+<body>
+    <div id="header"></div>
+
+    <section>
+        <div class="intro">
+            <h1>Desarrollo web y software con pasión por la innovación</h1>
+            <h2>Estudiante a ingenieria</h2>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="yo">
+                    <img src="./images/Axel.jpg" alt="Perfil">
+                </div>
+                <h4>Axel López Garcia</h4>
+                <p>Estudiante de Ingeniería en Tecnologías de la Información e Innovación Digital | Enfoque en desarrollo web y soluciones tecnológicas</p>
+                <a href="https://www.linkedin.com/in/axel-lopez-garcia-80bb84332/"><button>Linkedin</button></a>
+            </div>
+        </div>
+
+        <div class="proyectos"><h3>Proyectos principales</h3></div>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>DeerCoffe</h3>
+                <div class="carousel" id="carousel-1">
+                    <button class="prev" onclick="prevImage('carousel-1')">&#10094;</button>
+                    <img src="./images/deerCoffeeMenu.png" alt="Captura Deer Coffe" class="carousel-image">
+                    <img src="./images/deerCoffeAdmin.png" alt="Captura Deer Coffe" class="carousel-image" style="display:none;">
+                    <img src="./images/deerCoffeeCharola.png" alt="Captura Deer Coffe" class="carousel-image" style="display:none;">
+                    <button class="next" onclick="nextImage('carousel-1')">&#10095;</button>
+                </div>
+                <p> DeerCoffee es un sitio web creado específicamente para la comunidad estudiantil de la Universidad Tecnológica de Calvillo. Reconociendo las limitaciones de tiempo de los alumnos, DeerCoffee ofrece la posibilidad de realizar pedidos anticipados en la cafetería. Los estudiantes pueden seleccionar sus alimentos y bebidas, y la orden estará lista para recoger al llegar. Este sistema agiliza el proceso, permitiendo a los estudiantes pagar y recibir sus pedidos de manera rápida y eficiente.</p>
+                <div class="button-git"><a href="https://github.com/AxelLoGa/DeerCoffe.git"><button>GitHub</button></a></div>
+            </div>
+
+            <div class="card">
+                <h3>Rompe el Hielo</h3>
+                <div class="carousel" id="carousel-2">
+                    <button class="prev" onclick="prevImage('carousel-2')">&#10094;</button>
+                    <img src="./images/RompeleHielo.png" alt="Captura Rompe el Hielo" class="carousel-image">
+                    <img src="./images/RompeleHielo2.png" alt="Captura Rompe el Hielo" class="carousel-image" style="display:none;">
+                    <button class="next" onclick="nextImage('carousel-2')">&#10095;</button>
+                </div>
+                <p>Rompe el Hielo es una plataforma web para personas tímidas. Ofrecemos retos y ejercicios diarios para desarrollar habilidades sociales y ganar confianza. Con Rompe el Hielo, aprende a iniciar conversaciones, interactuar y manejar situaciones sociales. Registra tu progreso y conéctate con otros.</p>
+                <div class="button-git"><a href="https://github.com/AxelLoGa/RompeElHielo.git"><button>GitHub</button></a></div>
+            </div>
+            
+            <div class="card">
+                <h3>La casa de las leyendas</h3>
+                <div class="carousel" id="carousel-3">
+                    <button class="prev" onclick="prevImage('carousel-3')">&#10094;</button>
+                    <img src="./images/leyendas.png" alt="Captura La casa de las leyendas" class="carousel-image">
+                    <img src="./images/LaCasaDeLasLeyendasJuego.png" alt="Captura La casa de las leyendas" class="carousel-image" style="display:none;">
+                    <img src="./images/LaCasaDeLasLeyendasPuerta.png" alt="Captura La casa de las leyendas" class="carousel-image" style="display:none;">
+                    <img src="./images/LaCasaDeLasLeyendasCalle.png" alt="Captura La casa de las leyendas" class="carousel-image" style="display:none;">
+                    <button class="next" onclick="nextImage('carousel-3')">&#10095;</button>
+                </div>
+                <p> La Casa de las Leyendas es un videojuego 2D de plataformas, actualmente en desarrollo en Unity. Sumérgete en una aventura escalofriante donde tres jóvenes exploran una mansión embrujada. En cada habitación, descubre una leyenda urbana diferente, enfrentando desafíos y misterios inspirados en relatos populares.</p>
+                <div class="button-git"><a href="https://github.com/AxelLoGa/LaCasaDeLasLeyendas.git"><button>GitHub</button></a></div>
+            </div>
+        </div>
+
+        <div class="proyectos"><h3>Cursos</h3></div>
+        <div class="card-container">
+            <div class="card">
+                <h3>html</h3>
+                <img src="./images/curso-html.png" alt="curso html">
+                <p> Este curso es bla bla bla...</p>
+                <div><a href="#"><button>Ver curso</button></a></div>
+            </div>
+            <div class="card">
+                <h3>css</h3>
+                <img src="./images/curso-css.png" alt="curso css">
+                <p> Este curso es bla bla bla...</p>
+                <div><a href="#"><button>Ver curso</button></a></div>
+            </div>
+            <div class="card">
+                <h3>JavaScript</h3>
+                <img src="./images/curso-javascript.png" alt="curso JavaScript">
+                <p> Este curso es bla bla bla...</p>
+                <div><a href="#"><button>Ver curso</button></a></div>
+            </div>
+        </div>    
+
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="script.js"></script>
+    <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
